@@ -1,129 +1,178 @@
 <!DOCTYPE html>
-<html lang="vi">
+<html lang="en">
 <head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <link rel="icon" type="image/x-icon" href="app_icon.ico">
-  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
-  <link rel="stylesheet" type="text/css" href="style.css">
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <link rel="icon" type="image/x-icon" href="app_icon.ico" />
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css" />
+  <link rel="stylesheet" type="text/css" href="style.css" />
   <title>Personal Notebook</title>
 </head>
 <body>
 
 <div class="container">
-  <div class="app-header">
+
+  <!-- ===== HEADER ===== -->
+  <header class="app-header">
     <div class="header-left">
       <div class="header-icon">
-        <img src="app_icon.png" alt="Personal Notebook Logo" class="app-logo">
+        <img src="app_icon.png" alt="Personal Notebook Logo" class="app-logo" />
       </div>
     </div>
     <div class="header-right">
       <h1 id="appName">Personal Notebook</h1>
       <div class="welcome-message">
-        🌟 Welcome to the app 🌟<br>
+        🌟 Welcome to the app 🌟<br />
         we wish you a wonderful experience
       </div>
       <div class="features">
-        <div class="feature-item">
-          <i class="fas fa-heart"></i> Share emotions
-        </div>
-        <div class="feature-item">
-          <i class="fas fa-chart-line"></i> Manage finances
-        </div>
-        <div class="feature-item">
-          <i class="fas fa-calendar-check"></i> Schedule effectively
-        </div>
+        <div class="feature-item"><i class="fas fa-heart"></i> Share emotions</div>
+        <div class="feature-item"><i class="fas fa-chart-line"></i> Manage finances</div>
+        <div class="feature-item"><i class="fas fa-calendar-check"></i> Schedule effectively</div>
       </div>
       <a href="https://play.google.com/store/apps/details?id=com.tdh.dmts" target="_blank" class="google-play-btn">
-        <img src="https://play.google.com/intl/en_us/badges/static/images/badges/en_badge_web_generic.png" alt="Get it from Google Play">
+        <img src="https://play.google.com/intl/en_us/badges/static/images/badges/en_badge_web_generic.png" alt="Get it from Google Play" />
       </a>
     </div>
-  </div>
+  </header>
 
-  <div class="main-features">
+  <!-- ===== APP FEATURES ===== -->
+  <section class="main-features">
     <div class="features-header">
-      <h2>MAIN FEATURES</h2>
+      <h2>APP FEATURES</h2>
       <p class="features-sub">Explore all special features</p>
     </div>
     <div class="features-grid">
-      <div class="feature-card">
-        <div class="card-title">
-          <i class="fas fa-calculator"></i> CALCULATION
-        </div>
-        <ul class="feature-list">
-          <li><i class="fas fa-check-circle"></i> <span>Perform basic mathematical calculations</span></li>
-          <li><i class="fas fa-history"></i> <span>Save calculation history and search by date</span></li>
-        </ul>
-      </div>
-      <div class="feature-card">
-        <div class="card-title">
-          <i class="fas fa-book-open"></i> DIARY
-        </div>
-        <ul class="feature-list">
-          <li><i class="fas fa-smile"></i> <span>Track and record daily emotional states</span></li>
-          <li><i class="fas fa-pen-fancy"></i> <span>Write diary entries with various text formats</span></li>
-          <li><i class="fas fa-calendar-alt"></i> <span>Review diary history over time</span></li>
-        </ul>
-      </div>
-      <div class="feature-card">
-        <div class="card-title">
-          <i class="fas fa-wallet"></i> EXPENSE MANAGEMENT
-        </div>
-        <ul class="feature-list">
-          <li><i class="fas fa-coins"></i> <span>Manage personal income and expenses daily</span></li>
-          <li><i class="fas fa-chart-pie"></i> <span>Statistics and financial analysis</span></li>
-          <li><i class="fas fa-tags"></i> <span>Track expenses by category</span></li>
-          <li><i class="fas fa-chart-line"></i> <span>View visual charts of financial status</span></li>
-        </ul>
-      </div>
-      <div class="feature-card">
-        <div class="card-title">
-          <i class="fas fa-tasks"></i> NOTES & SCHEDULING
-        </div>
-        <ul class="feature-list">
-          <li><i class="fas fa-sticky-note"></i> <span>Create and manage work notes</span></li>
-          <li><i class="fas fa-calendar-week"></i> <span>Schedule daily events</span></li>
-          <li><i class="fas fa-check-double"></i> <span>Track task completion progress</span></li>
-        </ul>
-      </div>
-    </div>
-  </div>
 
-  <div class="unique-features">
+      <!-- Calculator -->
+      <div class="feature-card">
+        <div class="card-title"><i class="fas fa-calculator"></i> Calculator</div>
+        <ul class="feature-list">
+          <li><i class="fas fa-check-circle"></i> <span>Perform calculations quickly and accurately.</span></li>
+          <li><i class="fas fa-sliders-h"></i> <span>Flexible filters allow searching by time, result status, or a combination of criteria for fast lookup.</span></li>
+          <li><i class="fas fa-eye"></i> <span>Intuitive interface showing full expressions and results.</span></li>
+        </ul>
+      </div>
+
+      <!-- Diary -->
+      <div class="feature-card">
+        <div class="card-title"><i class="fas fa-book-open"></i> Diary</div>
+        <ul class="feature-list">
+          <li><i class="fas fa-pen-fancy"></i> <span>Record diary entries with various text formats.</span></li>
+          <li><i class="fas fa-filter"></i> <span>Multi‑criteria filter: search by time, mood, title, or combine them flexibly to quickly find the right entry.</span></li>
+          <li><i class="fas fa-chart-bar"></i> <span>Visual charts with 3 modes: overview, emotion statistics, and comparison between time periods.</span></li>
+        </ul>
+      </div>
+
+      <!-- Expense Management -->
+      <div class="feature-card">
+        <div class="card-title"><i class="fas fa-wallet"></i> Expense Management</div>
+        <ul class="feature-list">
+          <li><i class="fas fa-coins"></i> <span>Track income and expenses in detail by category and time.</span></li>
+          <li><i class="fas fa-filter"></i> <span>Flexible filters: filter transactions by time, balance status, number of transactions, or combine multiple criteria for precise lookup.</span></li>
+          <li><i class="fas fa-chart-pie"></i> <span>Financial charts with 2 modes: overview and comparison between time periods.</span></li>
+        </ul>
+      </div>
+
+      <!-- Notes & Schedule (đã sửa icon dòng 3 thành fa-chart-line) -->
+      <div class="feature-card">
+        <div class="card-title"><i class="fas fa-tasks"></i> Notes &amp; Schedule</div>
+        <ul class="feature-list">
+          <li><i class="fas fa-sticky-note"></i> <span>Create and manage work notes quickly and conveniently.</span></li>
+          <li><i class="fas fa-calendar-week"></i> <span>Plan daily event schedules, track status and progress.</span></li>
+          <li><i class="fas fa-chart-line"></i> <span>Event charts with 3 modes: overview, categorization, and comparison between time periods.</span></li>
+          <li><i class="fas fa-filter"></i> <span>Filter event lists by time, status, number of events, or flexibly combine multiple criteria to quickly get the desired results.</span></li>
+        </ul>
+      </div>
+
+    </div>
+  </section>
+
+  <!-- ===== WHY CHOOSE US? ===== -->
+  <section class="unique-features">
     <div class="unique-header">
       <h2>WHY CHOOSE US?</h2>
       <p class="unique-sub">The unique advantages that set us apart</p>
     </div>
     <div class="unique-grid">
-      <div class="unique-card">
-        <div class="unique-icon"><i class="fas fa-lock"></i></div>
-        <h3>Data Encryption & PIN Protection</h3>
-        <p>Your data is encrypted locally. Secure the app with a personal PIN code for maximum privacy.</p>
-      </div>
-      <div class="unique-card">
-        <div class="unique-icon"><i class="fas fa-user-plus"></i></div>
-        <h3>No Account Required</h3>
-        <p>Start using the app instantly without creating an account. Your data stays on your device.</p>
-      </div>
-      <div class="unique-card">
-        <div class="unique-icon"><i class="fas fa-id-card"></i></div>
-        <h3>Full Personalization</h3>
-        <p>Set your own avatar, display name, and a custom slogan to make the app truly yours.</p>
-      </div>
-      <div class="unique-card">
-        <div class="unique-icon"><i class="fas fa-language"></i></div>
-        <h3>Multi‑Language Support</h3>
-        <p>Choose from several languages to use the app in your preferred language.</p>
-      </div>
-      <div class="unique-card">
-        <div class="unique-icon"><i class="fas fa-shield-alt"></i></div>
-        <h3>Clear & Simple Privacy Policy</h3>
-        <p>We believe in transparency. Our privacy policy is short, clear, and easy to understand.</p>
-      </div>
-    </div>
-  </div>
 
-  <div class="app-footer">
+      <div class="unique-card">
+        <div class="unique-header-row">
+          <div class="unique-icon"><i class="fas fa-shield-alt"></i></div>
+          <h3>Data Encryption</h3>
+        </div>
+        <ul class="unique-bullets">
+          <li>Encrypted and stored locally on your device.</li>
+          <li>Only you can access your private information.</li>
+          <li>No cloud uploads, no third‑party interference.</li>
+        </ul>
+      </div>
+
+      <div class="unique-card">
+        <div class="unique-header-row">
+          <div class="unique-icon"><i class="fas fa-lock"></i></div>
+          <h3>App Lock with PIN / Pattern</h3>
+        </div>
+        <ul class="unique-bullets">
+          <li>Choose a PIN with 4, 6, or 8 digits (basic, medium, strong).</li>
+          <li>Set a unique 3×3 pattern lock (minimum 4 points).</li>
+          <li>Keep your notebook completely secure.</li>
+        </ul>
+      </div>
+
+      <div class="unique-card">
+        <div class="unique-header-row">
+          <div class="unique-icon"><i class="fas fa-user-check"></i></div>
+          <h3>No Account Required</h3>
+        </div>
+        <ul class="unique-bullets">
+          <li>Skip the hassle of signing up.</li>
+          <li>Works offline immediately.</li>
+          <li>Total ownership of your data without any registration.</li>
+        </ul>
+      </div>
+
+      <div class="unique-card">
+        <div class="unique-header-row">
+          <div class="unique-icon"><i class="fas fa-user-edit"></i></div>
+          <h3>Full Personalization</h3>
+        </div>
+        <ul class="unique-bullets">
+          <li>Customize your profile with a unique avatar.</li>
+          <li>Set a personalized display name.</li>
+          <li>Add a custom slogan that reflects your style.</li>
+        </ul>
+      </div>
+
+      <div class="unique-card">
+        <div class="unique-header-row">
+          <div class="unique-icon"><i class="fas fa-globe"></i></div>
+          <h3>Multi‑Language Support</h3>
+        </div>
+        <ul class="unique-bullets">
+          <li>Built‑in support for multiple languages.</li>
+          <li>Use the app in the language most familiar to you.</li>
+          <li>Break the language barrier effortlessly.</li>
+        </ul>
+      </div>
+
+      <div class="unique-card">
+        <div class="unique-header-row">
+          <div class="unique-icon"><i class="fas fa-file-alt"></i></div>
+          <h3>Clear &amp; Simple Privacy Policy</h3>
+        </div>
+        <ul class="unique-bullets">
+          <li>Complete transparency about your data.</li>
+          <li>Concise and straightforward privacy policy.</li>
+          <li>Written in plain language for full understanding.</li>
+        </ul>
+      </div>
+
+    </div>
+  </section>
+
+  <!-- ===== FOOTER ===== -->
+  <footer class="app-footer">
     <div class="footer-thanks">
       <i class="fas fa-heart"></i> Thank you for trusting us <i class="fas fa-heart"></i>
     </div>
@@ -132,7 +181,8 @@
         <i class="fas fa-envelope"></i> daimongtruongsinh@gmail.com
       </div>
     </div>
-  </div>
+  </footer>
+
 </div>
 
 </body>
